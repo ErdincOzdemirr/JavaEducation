@@ -1,6 +1,6 @@
 package com.erdincozdemir;
 
-public class AppMain {
+public class Convert_Type {
     public static void main(String[] args) {
 
         boolean medeniDurumu1 = true; //1 yes YES TRUE ( farklı syntax lar)
