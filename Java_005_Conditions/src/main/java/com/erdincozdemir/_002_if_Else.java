@@ -27,16 +27,16 @@ public class _002_if_Else {
 
         System.out.println("---- Ornek2 ----");
 
-        int yas1 = 18;
-        String saglikDurumu = "EVET";
+        int yas1 = 14;
+        String saglikDurumu = "HAYIR";
 
         if(saglikDurumu.equals("EVET")) {
             if (yas1 == 16 ){
-                System.out.println("Aday stajyer olabilir.");
+                System.out.println("Sağlık Durumun iyi ama Aday stajyer olabilir.");
             } else if (yas1 > 17 ) {
-                System.out.println("Reşit ehliyet alabilir.");
+                System.out.println("Sağlık durumun iyi ve Reşit olduğun için ehliyet alabilir.");
             } else  {
-                System.out.println("Üzgünüm ehliyet için uygun değilsiniz.");
+                System.out.println("Sağlık durumun iyi olmasına rağmen yaşın küçük olduğu için Üzgünüm ehliyet için uygun değilsiniz.");
             }
         } else {
             System.out.println("Sağlık durumunuz uygun olmadığı için rapor alamazsınız.");
