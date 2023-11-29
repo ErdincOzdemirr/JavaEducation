@@ -4,15 +4,63 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3a094da-5f9e-4807-a1bb-4e67fe65a858" name="Changes" comment="" />
+    <list default="true" id="c3a094da-5f9e-4807-a1bb-4e67fe65a858" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Java_007_TipDonusumleri/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_007_TipDonusumleri/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_007_TipDonusumleri/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_007_TipDonusumleri/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/erdincozdemir/_001_Array.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/erdincozdemir/_001_Array.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/erdincozdemir/_001_Array.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/erdincozdemir/_002_CokBoyutluArray.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2YocaFmPzTI2GrZ2I4ZCvkrHRUG" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="_001_Array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.erdincozdemir._001_Array" />
+      <module name="Java_008_Array" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.erdincozdemir.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application._001_Array" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -23,6 +71,8 @@
       <option name="presentableId" value="Default" />
       <updated>1701002249216</updated>
       <workItem from="1701002250291" duration="1532000" />
+      <workItem from="1701195436631" duration="44000" />
+      <workItem from="1701195483017" duration="1683000" />
     </task>
     <servers />
   </component>

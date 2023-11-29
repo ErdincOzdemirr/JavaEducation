@@ -1,5 +1,7 @@
 package com.erdincozdemir;
 
+import java.util.Scanner;
+
 public class _001_Array {
     public static void main(String[] args) {
         int sayi1 = 10;
@@ -48,5 +50,11 @@ public class _001_Array {
         for (int i = 0; i < myArrayByte.length; i++) {
             System.out.println(myArrayByte[i]);
         }
+
+
+        Scanner veriAl = new Scanner(System.in);
+        System.out.print("Değer Giriniz : ");
+        String deger = veriAl.nextLine();
+        System.out.println(deger);
     }
 }
