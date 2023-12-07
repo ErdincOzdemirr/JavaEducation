@@ -2,27 +2,41 @@ package com.erdincozdemir;
 
 public class Musteri {
 
-    private String adi;
+    private String adi = "İsim Belirtilmemiş";
     private String soyadi;
-
-   private String iban;
-
+    private String iban;
     private Long hesapNo;
-
-    private Double hesapCüzdani;
+    private Double hesapCuzdani;
 
     public Musteri() {
-        System.out.println("Boş mu");
+        System.out.println("Bos Parametre");
     }
 
-    public Musteri(String adi, String soyadi, String iban, long hesapNo, Double hesapCüzdani) {
+    public Musteri(String adi,
+                   String soyadi,
+                   String iban,
+                   Long hesapNo,
+                   Double hesapCuzdani) {
+
         this.adi = adi;
         this.soyadi = soyadi;
         this.iban = iban;
         this.hesapNo = hesapNo;
-        this.hesapCüzdani = hesapCüzdani;
+        this.hesapCuzdani = hesapCuzdani;
     }
 
+    public Musteri(
+                   String soyadi,
+                   String iban,
+                   Long hesapNo,
+                   Double hesapCuzdani) {
+
+        this.adi = adi;
+        this.soyadi = soyadi;
+        this.iban = iban;
+        this.hesapNo = hesapNo;
+        this.hesapCuzdani = hesapCuzdani;
+    }
     public String getAdi() {
         return adi;
     }
@@ -55,11 +69,11 @@ public class Musteri {
         this.hesapNo = hesapNo;
     }
 
-    public Double getHesapCüzdani() {
-        return hesapCüzdani;
+    public Double getHesapCuzdani() {
+        return hesapCuzdani;
     }
 
-    public void setHesapCüzdani(Double hesapCüzdani) {
-        this.hesapCüzdani = hesapCüzdani;
+    public void setHesapCuzdani(Double hesapCuzdani) {
+        this.hesapCuzdani = hesapCuzdani;
     }
 }
