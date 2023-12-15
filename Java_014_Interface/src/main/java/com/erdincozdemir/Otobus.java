@@ -1,28 +1,29 @@
 package com.erdincozdemir;
 
-public class Taksi extends Arac implements Kanun, Belediyeİstekleri{
+public class Otobus extends Arac implements Kanun, Guzergah{
     @Override
     public String aracKontrolu() {
-        return "2 ayda bir";
+        return "Haziran Ayında yapılır. ";
     }
 
     @Override
     public short hizSiniriAl() {
-        return 105;
+        return 120;
     }
 
     @Override
     public int ehliyetYenilemeZamani() {
-        return 8;
+        return 12;
+    }
+
+
+    @Override
+    public boolean biletDurumu() {
+        return true;
     }
 
     @Override
-    public String calismaSaatlari() {
-        return "8-17";
-    }
-
-    @Override
-    public boolean akilSagligiRaporu() {
+    public boolean vizeDurumu() {
         return false;
     }
 }
