@@ -28,8 +28,13 @@ public class AppMain {
         myListe1.add(2,"OLMUYOR");
         System.out.println("Liste1 : " + myListe1);
 
-        ArrayList myList3 = new ArrayList<>();
-        myList3.add("Özdemir");
+        List<Integer> myList3 = new ArrayList<>();
+        myList3.add(5);
+        myList3.add(12);
+        myList3.add(18);
+        myList3.add(21);
+        myList3.add(13);
+        myList3.add(146);
         System.out.println(myList3);
 
 
