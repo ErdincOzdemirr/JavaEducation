@@ -29,7 +29,12 @@ public class StreamdenListeye {
 
         Stream <String> myStream4 = Stream.of("Erdinç", "Hava", "İsmail", "Hacer", "Ezgi", "Erdinç");
 
-        TreeSet<String> myTreeSet4 = myStream4.filter(isim -> isim.contains("e")|| isim.contains("S")).collect(Collectors.toCollection(TreeSet::new));
+        TreeSet<String> myTreeSet4 = myStream4
+                                                .sorted()
+                                                .distinct()
+                                                .filter(isim -> isim.contains("e")||
+                                                isim.contains("S"))
+                                                .collect(Collectors.toCollection(TreeSet::new));
 
         System.out.println("myStream4 : "+myTreeSet4);
 
