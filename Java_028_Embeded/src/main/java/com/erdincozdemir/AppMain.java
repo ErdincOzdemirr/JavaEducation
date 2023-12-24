@@ -15,12 +15,15 @@ public class AppMain {
         customer1.setFirstName("Erdinç");
         customer1.setLastName("Ozdemir");
         customer1.setCreateDate(new Date());
+        customer1.setAdress("Sakarya");
 
         Customer customer2 = new Customer("Hava", "Sevgili");
         customer2.setCreateDate(new Date());
+        customer2.setAdress("Kocaeli");
 
         Customer customer3 = new Customer("ismail", "Hacer");
         customer3.setCreateDate(new Date());
+        customer3.setAdress("Ankara");
 
         Session session = HibernateUtil.getSessionFactory().openSession();
 

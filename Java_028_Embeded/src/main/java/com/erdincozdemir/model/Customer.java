@@ -2,7 +2,7 @@ package com.erdincozdemir.model;
 
 
 import javax.persistence.*;
-import java.util.Date;
+import java.util.*;
 
 @Entity
 @Table(name = "CUSTOMERS")
@@ -23,6 +23,11 @@ public class Customer {
     @Lob
     @Column(name = "ADRESS")
     private String adress;
+    /*
+    private String sehir;
+    private String ilce;
+    private String mahalle;
+    */
 
     public Customer() {
     }
@@ -80,4 +85,28 @@ public class Customer {
     public void setCreateDate(Date createDate) {
         this.createDate = createDate;
     }
+
+    public Customer(int id, String firstName, String lastName, Date createDate, String adress) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.createDate = createDate;
+        this.adress = adress;
+    }
+
+    public Customer(String firstName, String lastName, Date createDate, String adress) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.createDate = createDate;
+        this.adress = adress;
+    }
+
+    public String getAdress() {
+        return adress;
+    }
+
+    public void setAdress(String adress) {
+        this.adress = adress;
+    }
 }
+
