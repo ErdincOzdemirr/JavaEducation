@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7469d7c8-bd20-4798-be68-bb03cbffbe55" name="Changes" comment="" />
+    <list default="true" id="7469d7c8-bd20-4798-be68-bb03cbffbe55" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Java_023_ExceptionsTryCatch/src/main/java/com/erdincozdemir/MultiCatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/erdincozdemir/AppMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/erdincozdemir/AppMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_023_ExceptionsTryCatch/src/main/java/com/erdincozdemir/AppMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_023_ExceptionsTryCatch/src/main/java/com/erdincozdemir/AppMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_023_ExceptionsTryCatch/src/main/java/com/erdincozdemir/Deneme.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,10 +26,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2ZuixKcoFA5azZFLoFdhQPiv17c" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -40,6 +46,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/erdinc/Desktop/yazılım/JavaEducation/Java_022_Optional/pom.xml",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -86,6 +93,7 @@
       <updated>1703278067568</updated>
       <workItem from="1703278068659" duration="294000" />
       <workItem from="1703278611724" duration="6936000" />
+      <workItem from="1703392133142" duration="102000" />
     </task>
     <servers />
   </component>

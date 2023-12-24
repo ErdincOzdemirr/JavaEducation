@@ -35,11 +35,14 @@ public class AppMain {
 
         ogrenci = null;
         System.out.println(ogrenci);
-/*
-        System.out.println("id: "+ Optional.ofNullable(ogrenci.getId()));
-        System.out.println("Adi: "+ogrenci.getAdi());
-        System.out.println("SoyAdi: "+ogrenci.getSoyadi());
-*/
+        try {
+            System.out.println("id: " + Optional.ofNullable(ogrenci.getId()));
+            System.out.println("Adi: " + ogrenci.getAdi());
+            System.out.println("SoyAdi: " + ogrenci.getSoyadi());
+        } catch (Exception e){
+            System.out.println("Hata : " + e);
+        };
+
         System.out.println("-----------------------------");
 
         Optional <Double> ortalama = ortalamaHesapla ();//50, 77, 35, 6, 3.2, 1);
