@@ -42,7 +42,7 @@ public class AppMain {
 */
         System.out.println("-----------------------------");
 
-        Optional <Double> ortalama = ortalamaHesapla (50, 77, 35, 6, 3.2, 1);//);
+        Optional <Double> ortalama = ortalamaHesapla ();//50, 77, 35, 6, 3.2, 1);
         if(ortalama.isPresent()){
             System.out.println("Sınavların Ortalaması : "+ortalama.get());
         }else{
