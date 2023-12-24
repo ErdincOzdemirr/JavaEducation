@@ -35,11 +35,12 @@ public class AppMain {
 
         ogrenci = null;
         System.out.println(ogrenci);
-        /*
-        System.out.println("id: "+ogrenci.getId());
+/*
+        System.out.println("id: "+ Optional.ofNullable(ogrenci.getId()));
         System.out.println("Adi: "+ogrenci.getAdi());
         System.out.println("SoyAdi: "+ogrenci.getSoyadi());
-        */
+*/
+        System.out.println("-----------------------------");
 
         Optional <Double> ortalama = ortalamaHesapla (50, 77, 35, 6, 3.2, 1);//);
         if(ortalama.isPresent()){
