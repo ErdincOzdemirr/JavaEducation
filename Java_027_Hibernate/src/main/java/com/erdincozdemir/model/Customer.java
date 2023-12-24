@@ -2,9 +2,10 @@ package com.erdincozdemir.model;
 
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
-@Table(name = "CUSTOMER")
+@Table(name = "CUSTOMERS")
 public class Customer {
 
     @Id
@@ -12,10 +13,12 @@ public class Customer {
     @Column(name = "CUSTOMER_ID")
     private int id;
 
-    @Column(name = "FIRST_NAME")
+    @Column(name = "FIRST_NAME", length = 60, nullable = false)
     private String firstName;
-    @Column(name = "LAST_NAME")
+    @Column(name = "LAST_NAME", length = 75)
     private String lastName;
+    @Column(name = "CREATE_DATE")
+    private Date createDate;
 
     public Customer() {
     }
@@ -53,5 +56,24 @@ public class Customer {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public Customer(Date createDate) {
+        this.createDate = createDate;
+    }
+
+    public Customer(int id, String firstName, String lastName, Date createDate) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.createDate = createDate;
+    }
+
+    public Date getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
     }
 }
