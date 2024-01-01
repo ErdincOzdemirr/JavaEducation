@@ -73,11 +73,20 @@ public class Customer {
         this.createDate = createDate;
     }
 
+
     public Date getCreateDate() {
         return createDate;
     }
 
     public void setCreateDate(Date createDate) {
         this.createDate = createDate;
+    }
+
+    public Customer(int id, String firstName, String lastName, Date createDate, String adress) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.createDate = createDate;
+        this.adress = adress;
     }
 }
