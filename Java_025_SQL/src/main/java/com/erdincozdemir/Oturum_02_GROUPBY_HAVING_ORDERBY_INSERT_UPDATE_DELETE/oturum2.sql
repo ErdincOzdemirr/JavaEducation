@@ -159,3 +159,80 @@ UPDATE customers SET customers.age = 20 WHERE customer_id=19;
 
 SELECT * FROM customers WHERE customer_id = 19;
 
+-- SAKIN SAKIN BÖYLE YAPMAYIN! Silmede ŞART KESİNLİKLE OLMALI.
+-- DELETE FROM customers;
+
+SELECT * FROM customers;
+
+-- SADECE idsi 2 olan kaydı sileceğiz
+DELETE FROM customers WHERE customer_id = 2;
+
+-- Bütün kayıtlar ama 2. kayıt silindi yok.
+SELECT * FROM customers;
+
+-- Tablonun içini ilk oluşturulma anına alır. Sayaçlarını da.
+-- TRUNCATE TABLE customers;
+
+-- A'dan Z'ye isim kolonuna göre sırala -- VARSAYILAN A --> Z
+SELECT * FROM customers ORDER BY first_name;
+
+INSERT INTO `mydemodb`.`customers` (`first_name`, `last_name`, `phone`, `country`, `age`)
+VALUES ('Mehmet Ali', 'Kaya', '9999', 'CA', 26);
+
+SELECT * FROM customers ORDER BY first_name;
+
+-- Z'den A'ya isim kolonuna göre sırala
+SELECT * FROM customers
+ORDER BY first_name DESC;
+
+-- A'dan Z'ye yaşa göre sırala en küçükten  en büyüğe
+SELECT * FROM customers
+ORDER BY age ASC;
+
+-- Z'den A'ya yaşa göre sırala en büyükten en küçüğe
+SELECT * FROM customers
+ORDER BY age DESC;
+
+-- Z'den A'ya önce ülkelere göre sonra da yaşa göre sırala en büyükten en küçüğe
+SELECT * FROM customers
+ORDER BY  country DESC, age DESC;
+
+-- Z'den A'ya önce ülkelere göre sonra da yaşa göre sırala en küçüKTEN en büyüĞE
+SELECT * FROM customers
+ORDER BY  country DESC, age ASC;
+
+-- Ülke isimlerini al ve kişi sayılarına göre sırala
+SELECT country, count(*) AS numbers, first_name FROM customers GROUP BY country, first_name ;
+
+-- Ülke isimlerini benzersiz al
+SELECT DISTINCT country FROM customers;
+
+INSERT INTO `mydemodb`.`customers` (`first_name`, `last_name`, `phone`, `country`, `age`)
+VALUES ('Fatih', 'Özcan', '1999', 'DE', 25);
+
+INSERT INTO `mydemodb`.`customers` (`first_name`, `last_name`, `phone`, `country`, `age`)
+VALUES ('Fatih', 'Bey', '2222', 'DE', 42);
+
+-- Ülke isimlerini al ve kişi sayısına göre sırala
+SELECT country, first_name, COUNT(*) AS numbers FROM customers GROUP BY  country, first_name;
+
+-- Ülke isimlerini al ve kişi sayısına göre sırala - gruba şart ekle
+SELECT country, first_name, COUNT(*) AS numbers FROM customers
+GROUP BY  country, first_name
+HAVING country ='DE';
+
+-- Ülke isimlerini al ve kişi sayısına göre sırala - YAŞI DA 20 DEN BÜYÜKLERİ GETİR - gruba şart ekle
+SELECT customers.country, customers.first_name, COUNT(*) AS numbers FROM customers WHERE age>20 AND country = 'DE'GROUP BY country, first_name;
+
+-- Ülke isimlerini al ve kişi sayısına göre sırala - gruba şart ekle
+SELECT country, first_name, COUNT(*) AS numbers FROM customers
+-- WHERE age > 22
+GROUP BY  country, first_name
+HAVING country ='DE';
+
+-- Ülke isimlerini al ve kişi sayısına göre sırala - gruba şartı Almanya olmayanlar
+SELECT country, first_name, COUNT(*) AS numbers FROM customers
+GROUP BY  country, first_name
+HAVING NOT country ='DE';
+-- HAVING country !='DE';
+-- ikiside aynı
