@@ -235,4 +235,7 @@ SELECT country, first_name, COUNT(*) AS numbers FROM customers
 GROUP BY  country, first_name
 HAVING NOT country ='DE';
 -- HAVING country !='DE';
--- ikiside aynı
+SELECT country, first_name, COUNT(*) AS numbers FROM customers
+GROUP BY  country, first_name
+HAVING country !='DE';
+-- ikiside aynı != ve NOT
