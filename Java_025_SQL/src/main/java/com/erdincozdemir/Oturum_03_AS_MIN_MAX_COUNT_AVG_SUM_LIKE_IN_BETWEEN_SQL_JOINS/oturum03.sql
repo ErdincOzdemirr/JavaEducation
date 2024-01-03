@@ -231,4 +231,61 @@ SELECT *
 FROM mydemodb.customers
         INNER JOIN mydemodb.orders ON customers.customer_id = orders.customer_id;
 
---JOINLERDE kolonları seçme
+--JOINLERDE kolonları seçme lakap takma ad kullanımı
+SELECT c.customer_id, c.first_name, c.last_name, o.customer_id, o.product FROM mydemodb.customers c INNER JOIN mydemodb.orders o ON c.customer_id = o.customer_id;
+
+--JOINLERDE kolonları seçme lakap takma ad kullanımı
+SELECT c.customer_id c_id, c.first_name, c.last_name,        o.product, o.total, o.customer_id AS o_cusid
+FROM mydemodb.customers as c
+         INNER JOIN mydemodb.orders o
+                    ON  o.customer_id = c.customer_id ;
+
+
+SELECT * FROM mydemodb.orders;
+
+SELECT * FROM mydemodb.customers WHERE customer_id = 3;
+
+SELECT o.customer_id o_cusid, c.customer_id c_id, c.first_name, c.last_name,        o.product, o.total
+FROM mydemodb.customers c
+         INNER JOIN mydemodb.orders o
+                    ON  o.customer_id = c.customer_id
+WHERE total > 30;
+
+SELECT COUNT(*) FROM mydemodb.customers;
+
+SELECT COUNT(*) FROM mydemodb.orders;
+
+-- LEFT JOIN ile
+SELECT c.customer_id c_id, c.first_name, c.last_name, o.customer_id o_cusid, o.product, o.total FROM mydemodb.customers c LEFT JOIN mydemodb.orders o ON o.customer_id = c.customer_id WHERE total > 50;
+
+-- RIGHT JOIN ile
+SELECT c.customer_id c_id, c.first_name, c.last_name, o.customer_id o_cusid, o.product, o.total FROM mydemodb.customers c RIGHT JOIN mydemodb.orders o ON o.customer_id = c.customer_id WHERE total > 50;
+
+-- FULL JOIN ile
+SELECT c.customer_id c_id, c.first_name, c.last_name,       o.customer_id o_cusid, o.product, o.total
+FROM mydemodb.customers c
+         FULL JOIN mydemodb.orders o
+                   ON  o.customer_id = c.customer_id;
+
+
+-- LEFT JOIN ile şart ekledik
+SELECT c.customer_id c_id, c.first_name, c.last_name,       o.customer_id o_cusid, o.product, o.total
+FROM mydemodb.customers c
+         LEFT JOIN mydemodb.orders o
+                   ON  o.customer_id = c.customer_id
+WHERE o.customer_id IS NULL;
+
+-- RIGHT JOIN ile şart ekledik
+SELECT c.customer_id c_id, c.first_name, c.last_name,       o.customer_id o_cusid, o.product, o.total
+FROM mydemodb.customers c
+         RIGHT JOIN mydemodb.orders o
+                    ON  o.customer_id = c.customer_id
+WHERE c.customer_id IS NULL;
+
+
+-- RIGHT JOIN ile şart ekledik
+SELECT c.customer_id c_id, c.first_name, c.last_name,       s.customer_id o_cusid, s.status
+FROM mydemodb.customers c
+         RIGHT JOIN mydemodb.shippings s
+                    ON  s.customer_id = c.customer_id
+WHERE c.customer_id IS NULL;
