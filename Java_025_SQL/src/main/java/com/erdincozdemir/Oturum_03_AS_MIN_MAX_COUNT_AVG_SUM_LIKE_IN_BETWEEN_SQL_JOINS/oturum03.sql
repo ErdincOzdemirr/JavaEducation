@@ -288,4 +288,4 @@ SELECT c.customer_id c_id, c.first_name, c.last_name,       s.customer_id o_cusi
 FROM mydemodb.customers c
          RIGHT JOIN mydemodb.shippings s
                     ON  s.customer_id = c.customer_id
-WHERE c.customer_id IS NULL;
+WHERE c.customer_id IS NOT NULL;
