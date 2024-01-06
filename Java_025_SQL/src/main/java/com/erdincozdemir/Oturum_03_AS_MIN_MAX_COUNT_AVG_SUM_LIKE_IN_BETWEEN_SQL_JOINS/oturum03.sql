@@ -284,8 +284,10 @@ WHERE c.customer_id IS NULL;
 
 
 -- RIGHT JOIN ile şart ekledik
-SELECT c.customer_id c_id, c.first_name, c.last_name,       s.customer_id o_cusid, s.status
+CREATE VIEW customer_last_5 AS SELECT c.customer_id c_id, c.first_name, c.last_name,       s.customer_id o_cusid, s.status
 FROM mydemodb.customers c
          RIGHT JOIN mydemodb.shippings s
                     ON  s.customer_id = c.customer_id
 WHERE c.customer_id IS NOT NULL;
+
+SELECT * FROM customer_last_5;
