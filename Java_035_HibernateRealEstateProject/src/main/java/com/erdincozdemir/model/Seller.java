@@ -31,4 +31,5 @@ public class Seller {
 
     @Column(name = "PHONE")
     String phone;
+
 }

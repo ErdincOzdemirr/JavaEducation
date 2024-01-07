@@ -1,9 +1,9 @@
 package com.erdincozdemir.util;
 
-import com.mimaraslan.model.Agent;
-import com.mimaraslan.model.Buyer;
-import com.mimaraslan.model.Property;
-import com.mimaraslan.model.Seller;
+import com.erdincozdemir.model.Agent;
+import com.erdincozdemir.model.Buyer;
+import com.erdincozdemir.model.Property;
+import com.erdincozdemir.model.Seller;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
@@ -20,21 +20,21 @@ public class HibernateUtil {
                 Configuration configuration = new Configuration();
 
                 // MYSQL 8
-/*                 Properties settings = new Properties();
+                Properties settings = new Properties();
                 settings.put(Environment.DRIVER, "com.mysql.cj.jdbc.Driver");
                 settings.put(Environment.URL, "jdbc:mysql://localhost:3306/real_estate_db?useSSL=false");
                 settings.put(Environment.USER, "root");
                 settings.put(Environment.PASS, "123456789");
                 settings.put(Environment.DIALECT, "org.hibernate.dialect.MySQL8Dialect");
-*/
-               // PostgreSQL
-                Properties settings = new Properties();
+
+/*                // PostgreSQL
+                Properties settings = new Properties();s
                 settings.put(Environment.DRIVER, "org.postgresql.Driver");
                 settings.put(Environment.URL, "jdbc:postgresql://localhost:5432/real_estate_db");
                 settings.put(Environment.USER, "postgres");
                 settings.put(Environment.PASS, "123456789");
                 settings.put(Environment.DIALECT, "org.hibernate.dialect.PostgreSQL95Dialect");
-
+*/
 
                 settings.put(Environment.SHOW_SQL, "false");
                 settings.put(Environment.HBM2DDL_AUTO, "create");
