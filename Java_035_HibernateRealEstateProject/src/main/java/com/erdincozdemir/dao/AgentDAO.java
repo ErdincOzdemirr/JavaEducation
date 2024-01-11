@@ -11,37 +11,37 @@ import java.util.List;
 
 public class AgentDAO {
 
-public void saveOrUpdate(Agent agent ){
+    public void saveOrUpdate(Agent agent ){
 
-    Session session = HibernateUtil.getSessionFactory().openSession();
-    Transaction transaction = null;
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Transaction transaction = null;
 
-    try {
-        transaction = session.beginTransaction();
-        session.saveOrUpdate(agent);
-        transaction.commit();
-    } catch (HibernateException ex) {
+        try {
+            transaction = session.beginTransaction();
+            session.saveOrUpdate(agent);
+            transaction.commit();
+        } catch (HibernateException ex) {
 
-        if (transaction != null)
-            transaction.rollback();
+            if (transaction != null)
+                transaction.rollback();
 
-        System.out.println("Hata: " + ex);
-        ex.printStackTrace();
+            System.out.println("Hata: " + ex);
+            ex.printStackTrace();
 
-    } finally {
-        session.close();
+        } finally {
+            session.close();
+        }
+
     }
-
-}
- public Agent getAgentFindById (long id){
+    public Agent getAgentFindById (long id){
         return null;
-}
- public List<Agent> getAgentsfindAll(){
-        return null;
- }
- public void deleteAgentFindById (Long id){
     }
- };
+    public List<Agent> getAgentsfindAll(){
+        return null;
+    }
+    public void deleteAgentFindById (Long id){
+    }
+};
 
 
 
