@@ -12,7 +12,7 @@ public class StudentController {
      //http://localhost:8082
      @GetMapping
      public String getHello() {
-          return "Spring Boot Hello World";
+          return "Spring Boot Hello World! This sentence is writing Erdinç! ";
      }
 
 }
