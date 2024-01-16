@@ -1,0 +1,13 @@
+package com.erdincozdemir;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class Java038SpringBootCrudApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(Java038SpringBootCrudApplication.class, args);
+    }
+
+}
