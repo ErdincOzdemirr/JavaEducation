@@ -14,6 +14,6 @@ public class PersonelController {
     //http://localhost:8080/api/v2/merhaba
     @GetMapping({"/hello", "/merhaba"})
     public String getDockerHello(){
-        return "Hi Docker";
+        return "Hi Docker!";
     }
 }
